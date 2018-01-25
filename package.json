@@ -1,0 +1,30 @@
+{
+    "name": "elasticsearch-sender",
+    "version": "1.0.0",
+    "description": "Make it easier to send bulk data Elasticsearch",
+    "main": "index.js",
+    "engines": {
+      "node": ">=4"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MikeyBurkman/elasticsearch-sender.git"
+    },
+    "keywords": [
+      "elasticsearch"
+    ],
+    "author": "MikeyBurkman",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/MikeyBurkman/elasticsearch-sender/issues"
+    },
+    "homepage": "https://github.com/MikeyBurkman/elasticsearch-sender#readme",
+    "dependencies": {
+      "cron": "~1.3.0",
+      "elasticsearch": "~13.3.1"
+    }
+  }
+  
