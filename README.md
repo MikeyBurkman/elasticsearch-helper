@@ -9,7 +9,7 @@ library will handle that for you.
 
 ### Usage
 ```js
-const esSender = require('elasticsearch-sender').buildSender({
+const esSend = require('elasticsearch-sender').buildSender({
     host: 'myElasticsearchHost.com',
     indexName: 'my-index',
     indexType: 'monthly',
@@ -23,14 +23,14 @@ const esSender = require('elasticsearch-sender').buildSender({
 
 ...
 
-esSender([{
+esSend([{
     name: 'foo service',
     numProcessed: 42,
-    created: new Date()
+    created: new Date().toISOString()
 }, {
     name: 'bar service',
     numProcessed: 2,
-    created: new Date()   
+    created: new Date().toISOString() 
 }])
 .then(() => console.log('Items sent to Elasticsearch'));
 ```
