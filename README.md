@@ -14,9 +14,9 @@ const esSend = require('elasticsearch-sender').buildSender({
     indexName: 'my-index',
     indexType: 'monthly',
     indexShape: {
-        name: { type: 'string', index: 'not_analyzed' },
+        name: { type: 'keyword', index: true },
         numProcessed: { type: 'integer' },
-        created: { type: 'date'}
+        created: { type: 'date', index: true}
     },
     recordType: 'myRecordType'
 });

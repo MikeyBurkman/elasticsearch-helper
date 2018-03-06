@@ -69,9 +69,13 @@ exports.buildSender = function (opts) {
 
 		return indexInfo.createIndexPromise // Make sure the index is created before anything else
 			.then(function () {
-				return client.bulk({
-					body: toSend
-				});
+				if (toSend.length > 0) {
+					return client.bulk({
+						body: toSend
+					});
+				} else {
+					return null;
+				}
 			});
 	};
 
