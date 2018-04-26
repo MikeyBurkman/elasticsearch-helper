@@ -46,3 +46,6 @@ Builds a sender function that will automatically handle bulk processing and inde
 - `esLogLevel` Optional. The log level for the Elasticsearch client. Defaults to `'info'`
 
 This returns a function that takes in an array of items and sends them all to Elasticsearch.
+
+## Disclaimer
+This library is designed for my personal common use cases, namely, sending medium amounts of small pieces of data to a hosted ES server, allowing for me to run metrics queries easily. It does not try to get into more advanced use cases.
