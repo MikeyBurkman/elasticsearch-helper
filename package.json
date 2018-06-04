@@ -1,6 +1,6 @@
 {
     "name": "elasticsearch-sender",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Make it easier to send bulk data Elasticsearch",
     "main": "index.js",
     "engines": {
